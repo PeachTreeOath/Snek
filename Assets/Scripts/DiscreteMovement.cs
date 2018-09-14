@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiscreteMovement : MonoBehaviour {
+public class DiscreteMovement
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public enum DiscreteDirection
+{
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT
+}
+
+public Vector3 Move(DiscreteDirection direction, Vector3 originalPosition)
+{
+	return originalPosition;
+}
+
 }
